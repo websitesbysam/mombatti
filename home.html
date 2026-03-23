@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moमबत्ती</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:Arial, sans-serif;background:#0e0e0e;color:#fff}
+    .container{width:min(1100px,92%);margin:auto}
+
+    header{padding:20px 0;border-bottom:1px solid #222}
+    header h1{font-size:1.8rem}
+
+    .hero{padding:80px 0;text-align:center}
+    .hero h2{font-size:3rem;margin-bottom:20px}
+    .hero p{color:#aaa;max-width:600px;margin:auto}
+
+    .btn{display:inline-block;margin-top:25px;padding:12px 24px;background:#fff;color:#000;text-decoration:none;border-radius:8px;font-weight:bold}
+
+    section{padding:60px 0}
+
+    .products{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .card{background:#1a1a1a;border-radius:16px;overflow:hidden}
+    .card img{width:100%;height:220px;object-fit:cover}
+    .card-content{padding:15px}
+
+    .price{color:#ffd369;margin-top:5px}
+
+    .reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .review{background:#1a1a1a;padding:20px;border-radius:16px}
+
+    .cta{background:#111;padding:40px;text-align:center;border-radius:20px}
+
+    @media(max-width:900px){
+      .products,.reviews{grid-template-columns:1fr}
+      .hero h2{font-size:2rem}
+    }
+  </style>
+</head>
+<body>
+
+<header class="container">
+  <h1>Luma Candles</h1>
+</header>
+
+<section class="hero container">
+  <h2>Not Just Candles. A Statement.</h2>
+  <p>Bold handcrafted candles designed to stand out. Made for gifting, branding, and creating a strong impression.</p>
+  <a class="btn" href="#products">Explore Products</a>
+</section>
+
+<section id="products" class="container">
+  <h2 style="margin-bottom:20px">Bestsellers</h2>
+  <div class="products">
+
+    <div class="card">
+      <img src="candle.jpeg" />
+      <div class="card-content">
+        <h3>Vanilla Glow</h3>
+        <p class="price">₹499</p>
+        <a class="btn" href="https://wa.me/918563049049">Order</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="lavender.jpeg" />
+      <div class="card-content">
+        <h3>Lavender Calm</h3>
+        <p class="price">₹549</p>
+        <a class="btn" href="https://wa.me/918563049049">Order</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="citrus.jpeg" />
+      <div class="card-content">
+        <h3>Citrus Dawn</h3>
+        <p class="price">₹479</p>
+        <a class="btn" href="https://wa.me/918563049049">Order</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="container">
+  <h2 style="margin-bottom:20px">What Customers Say</h2>
+  <div class="reviews">
+    <div class="review">Amazing quality and packaging.</div>
+    <div class="review">Perfect for gifting, looks premium.</div>
+    <div class="review">Smells great and lasts long.</div>
+  </div>
+</section>
+
+<section class="container">
+  <div class="cta">
+    <h2>Ready to Order?</h2>
+    <p>Message us directly and get your candle delivered.</p>
+    <a class="btn" href="https://wa.me/918563049049">Order Now</a>
+  </di
