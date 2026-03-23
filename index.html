@@ -23,17 +23,21 @@
       white-space: nowrap;
       border-bottom: 1px solid rgba(255,255,255,0.08);
     }
-    .top-strip-track {
-      display: inline-block;
-      padding: 10px 0;
-      animation: moveStrip 5s linear infinite;
-      font-size: 0.9rem;
-      letter-spacing: 1px;
-    }
-    @keyframes moveStrip {
-      from { transform: translateX(0); }
-      to { transform: translateX(-50%); }
-    }
+   .top-strip-track {
+  display: inline-block;
+  padding: 10px 0;
+  animation: moveStrip 3s linear infinite alternate;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+@keyframes moveStrip {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+} 
 
     .hero {
       background: linear-gradient(135deg, #3D0022 0%, #5b1236 50%, #210312 100%);
